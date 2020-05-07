@@ -111,7 +111,7 @@ def m(vmax, rho):
   v=np.full(vmax.shape,0.0)
   for key, vmaxVal in enumerate(vmax):  
     rhoCritical = (80.0*100*300)/(vmaxVal*(300 - 80) + 80*100)  # update rho critical given current vmax
-    if rho < rhoCritical:
+    if rho <= rhoCritical:
       v[key] = vmaxVal
     elif rho > rhoCritical:
       v[key] = float(vmaxVal*(rhoCritical)*(300.0 - rho))/(rho*(300.0 - rhoCritical))
