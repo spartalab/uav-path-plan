@@ -12,5 +12,6 @@ contains code for ensemble Kalman filtering, traffic simulation (cell transmissi
   * findPath.py: finding path with least anticipated uncertainty (maximum reduction in variance on estimates)
   * main.py: master script for running simulation
   
+  ![uavpath](drtrajWeights.png)
   
   @cesaryahia@utexas.edu
